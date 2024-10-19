@@ -108,33 +108,33 @@ Backend
 
 1. Navigate to the rule-engine directory:
    
-cd rule-engine
+    cd rule-engine
 
 3. Install the dependencies:
    
-npm install
+    npm install
 
 4. Create a .env file and add necessary environment variables, including your database URL:
    
-HORA_DATABASE=<your_database_url>
+    HORA_DATABASE=<your_database_url>
 
 5. Start the backend server:
    
-npm start
+    npm start
 
 # Frontend:
 
 1. Navigate to the rule-engine-frontend directory:
    
-cd rule-engine-frontend
+    cd rule-engine-frontend
 
 2. Install the dependencies:
    
-npm install
+    npm install
 
 3. Start the frontend development server:
    
-npm run dev
+    npm run dev
 
 # Usage:
 
