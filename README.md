@@ -107,26 +107,33 @@ Key Files:
 Backend
 
 1. Navigate to the rule-engine directory:
+   
 cd rule-engine
 
-2. Install the dependencies:
+3. Install the dependencies:
+   
 npm install
 
-3. Create a .env file and add necessary environment variables, including your database URL:
+4. Create a .env file and add necessary environment variables, including your database URL:
+   
 HORA_DATABASE=<your_database_url>
 
-4. Start the backend server:
+5. Start the backend server:
+   
 npm start
 
 # Frontend:
 
 1. Navigate to the rule-engine-frontend directory:
+   
 cd rule-engine-frontend
 
 2. Install the dependencies:
+   
 npm install
 
 3. Start the frontend development server:
+   
 npm run dev
 
 # Usage:
