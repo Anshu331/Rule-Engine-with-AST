@@ -70,52 +70,81 @@ User-defined Functions: Optionally extend the system to support custom functions
 
 Backend (Node.js)
 Folder: rule-engine
+
 Key Files:
 
 src/: Contains controllers, models, and utility functions.
+
 index.js: Main entry point for the backend.
+
 .env: Environment variables for the backend.
+
 package.json: Dependencies and scripts.
 
 Frontend (React, Vite, Tailwind CSS)
+
 Folder: rule-engine-frontend
+
 Key Files:
 
 src/: React components and logic.
+
 tailwind.config.js: Tailwind CSS configuration.
+
 vite.config.js: Vite configuration for the frontend.
+
 .eslintrc.cjs: ESLint configuration.
 
 Cloning the Repository:
+
 Open your terminal.
+
 Run the following command to clone the repository:
+
 git clone <repository_url>
+
 Navigate to the project directory:
+
 cd <repository_directory>
 
 # Installation and Setup:
+
 Backend
+
 Navigate to the rule-engine directory:
+
 cd rule-engine
+
 Install the dependencies:
+
 npm install
+
 Create a .env file and add necessary environment variables, including your database URL:
 
 HORA_DATABASE=<your_database_url>
+
 Start the backend server:
+
 npm start
 
 # Frontend:
 
 Navigate to the rule-engine-frontend directory:
+
 cd rule-engine-frontend
+
 Install the dependencies:
+
 npm install
+
 Start the frontend development server:
+
 npm run dev
 
 # Usage:
 
 Open the frontend application in your browser.
+
 Use the interface to create, combine, and evaluate rules dynamically.
+
 The backend API will handle rule creation, combination, and evaluation based on the attributes you provide.
