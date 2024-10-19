@@ -55,96 +55,84 @@ Description: Evaluates a rule against the provided attributes.
 
 # Test Cases:
 
-Creating Rules: Convert rules to AST using create_rule and verify their correctness.
-Combining Rules: Combine multiple rules and check the combined AST for correctness.
-Evaluating Rules: Provide sample JSON data and test the evaluate_rule function to see if the rule logic works as expected.
+1.1 Creating Rules
+Convert rules to AST using create_rule and verify their correctness.
+
+1.2 Combining Rules
+Combine multiple rules and check the combined AST for correctness.
+
+1.3 Evaluating Rules
+Provide sample JSON data and test the evaluate_rule function to ensure the rule logic works as expected.
 
 # Bonus Features:
 
-Error Handling: Handle invalid rule strings or incorrect data formats.
-Attribute Validation: Ensure attributes are part of a pre-defined catalog.
-Rule Modification: Allow existing rules to be modified using additional functions.
-User-defined Functions: Optionally extend the system to support custom functions in the rule language.
+2.1 Error Handling
+Handle invalid rule strings or incorrect data formats.
 
-# Project Structure:
+2.2 Attribute Validation
+Ensure attributes are part of a pre-defined catalog.
+
+2.3 Rule Modification
+Allow existing rules to be modified using additional functions.
+
+2.4 User-defined Functions
+Optionally extend the system to support custom functions in the rule language.
+
+#Project Structure:
 
 Backend (Node.js)
+
 Folder: rule-engine
 
 Key Files:
 
-src/: Contains controllers, models, and utility functions.
-
-index.js: Main entry point for the backend.
-
-.env: Environment variables for the backend.
-
-package.json: Dependencies and scripts.
-
+1. src/: Contains controllers, models, and utility functions.
+2. index.js: Main entry point for the backend.
+3. .env: Environment variables for the backend.
+4. package.json: Dependencies and scripts.
+   
 Frontend (React, Vite, Tailwind CSS)
 
 Folder: rule-engine-frontend
 
 Key Files:
 
-src/: React components and logic.
-
-tailwind.config.js: Tailwind CSS configuration.
-
-vite.config.js: Vite configuration for the frontend.
-
-.eslintrc.cjs: ESLint configuration.
-
-Cloning the Repository:
-
-Open your terminal.
-
-Run the following command to clone the repository:
-
-git clone <repository_url>
-
-Navigate to the project directory:
-
-cd <repository_directory>
+1. src/: React components and logic.
+2. tailwind.config.js: Tailwind CSS configuration.
+3. vite.config.js: Vite configuration for the frontend.
+4. .eslintrc.cjs: ESLint configuration.
 
 # Installation and Setup:
 
 Backend
 
-Navigate to the rule-engine directory:
-
+1. Navigate to the rule-engine directory:
 cd rule-engine
 
-Install the dependencies:
-
+2. Install the dependencies:
 npm install
 
-Create a .env file and add necessary environment variables, including your database URL:
-
+3. Create a .env file and add necessary environment variables, including your database URL:
 HORA_DATABASE=<your_database_url>
 
-Start the backend server:
-
+4. Start the backend server:
 npm start
 
 # Frontend:
 
-Navigate to the rule-engine-frontend directory:
-
+1. Navigate to the rule-engine-frontend directory:
 cd rule-engine-frontend
 
-Install the dependencies:
-
+2. Install the dependencies:
 npm install
 
-Start the frontend development server:
-
+3. Start the frontend development server:
 npm run dev
 
 # Usage:
 
-Open the frontend application in your browser.
+1. Open the frontend application in your browser.
 
-Use the interface to create, combine, and evaluate rules dynamically.
+2. Use the interface to create, combine, and evaluate rules dynamically.
 
-The backend API will handle rule creation, combination, and evaluation based on the attributes you provide.
+3. The backend API will handle rule creation, combination, and evaluation based on the attributes you provide.
