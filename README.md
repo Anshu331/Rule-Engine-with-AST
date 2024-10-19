@@ -6,15 +6,15 @@ This repository contains a 3-tier rule engine application that evaluates user el
 
 # Features:
 
-Create, combine, and modify rules using AST.
-Dynamic rule evaluation based on attributes.
-MongoDB is used for data storage.
-Simple API and frontend interface to manage rules.
+1. Create, combine, and modify rules using AST.
+2. Dynamic rule evaluation based on attributes.
+3. MongoDB is used for data storage.
+4. Simple API and frontend interface to manage rules.
 
 # Data Structure:
 The AST is represented using a node-based structure:
 
-# Node Structure:
+Node Structure:
 type: A string indicating the node type (operator for AND/OR, operand for conditions).
 left: Reference to the left child node.
 right: Reference to the right child node.
@@ -32,9 +32,10 @@ A rule is saved in both string format and as an AST.
   "ast": { /* Abstract Syntax Tree structure */ }
 }
 
-# Sample Rules:
+Sample Rules:
 
 Rule 1: ((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)
+
 Rule 2: ((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)
 
 # API Design: 
@@ -69,7 +70,7 @@ User-defined Functions: Optionally extend the system to support custom functions
 
 Backend (Node.js)
 Folder: rule-engine
-# Key Files:
+Key Files:
 
 src/: Contains controllers, models, and utility functions.
 index.js: Main entry point for the backend.
@@ -85,7 +86,7 @@ tailwind.config.js: Tailwind CSS configuration.
 vite.config.js: Vite configuration for the frontend.
 .eslintrc.cjs: ESLint configuration.
 
-# Cloning the Repository:
+Cloning the Repository:
 Open your terminal.
 Run the following command to clone the repository:
 git clone <repository_url>
