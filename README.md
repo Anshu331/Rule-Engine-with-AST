@@ -78,7 +78,7 @@ Allow existing rules to be modified using additional functions.
 2.4 User-defined Functions
 Optionally extend the system to support custom functions in the rule language.
 
-#Project Structure:
+# Project Structure:
 
 Backend (Node.js)
 
