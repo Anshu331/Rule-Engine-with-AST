@@ -35,9 +35,9 @@ A rule is saved in both string format and as an AST.
 Sample Rules:
  ```
 
-- **Rule 1:** ((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)
+    Rule 1: ((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)
 
-- **Rule 2:** ((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)
+    Rule 2: ((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)
  ```
 ## API Design: 
 
@@ -84,7 +84,7 @@ Description: Evaluates a rule against the provided attributes.
 
 - **Folder: rule-engine Frontend**
 
--**Key Files:**
+- **Key Files:**
 
 1. src/: React components and logic.
 2. tailwind.config.js: Tailwind CSS configuration.
