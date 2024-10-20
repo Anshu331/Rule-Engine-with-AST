@@ -1,6 +1,6 @@
 Rule Engine with AST
 
-# Objective:
+## Objective:
 
 This repository contains a 3-tier rule engine application that evaluates user eligibility based on attributes like age, department, income, spend, etc. The system uses an Abstract Syntax Tree (AST) to represent and manage conditional rules, allowing dynamic creation, combination, and modification of these rules.
 
@@ -11,20 +11,20 @@ This repository contains a 3-tier rule engine application that evaluates user el
 3. MongoDB is used for data storage.
 4. Simple API and frontend interface to manage rules.
 
-# Data Structure:
+## Data Structure:
 The AST is represented using a node-based structure:
 
 Node Structure:
-type: A string indicating the node type (operator for AND/OR, operand for conditions).
-left: Reference to the left child node.
-right: Reference to the right child node.
-value: The actual condition (e.g., age > 30) for operand nodes.
+- **type:** A string indicating the node type (operator for AND/OR, operand for conditions).
+- **left:** Reference to the left child node.
+- **right:** Reference to the right child node.
+- **value:** The actual condition (e.g., age > 30) for operand nodes.
 
-Data Storage
+### Data Storage
 MongoDB is used to store the rules and metadata.
 A rule is saved in both string format and as an AST.
 
-# Sample Data:
+## Sample Data:
 
 {
   "_id": { "$oid": "6711e33897e50c81ddb6ea6d" },
@@ -34,11 +34,11 @@ A rule is saved in both string format and as an AST.
 
 Sample Rules:
 
-Rule 1: ((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)
+- **Rule 1:** ((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)
 
-Rule 2: ((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)
+- **Rule 2:** ((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)
 
-# API Design: 
+## API Design: 
 
 1. create_rule(rule_string)
 Input: Rule string (e.g., "age > 30 AND department = 'Sales'")
@@ -53,38 +53,29 @@ Input: AST and a dictionary of attributes (e.g., {"age": 35, "department": "Sale
 Output: Boolean (True if data satisfies the rule, False otherwise).
 Description: Evaluates a rule against the provided attributes.
 
-# Test Cases:
+## Test Cases:
 
-1.1 Creating Rules
+** Creating Rules **
 Convert rules to AST using create_rule and verify their correctness.
 
-1.2 Combining Rules
+** Combining Rules **
 Combine multiple rules and check the combined AST for correctness.
 
-1.3 Evaluating Rules
+** Evaluating Rules **
 Provide sample JSON data and test the evaluate_rule function to ensure the rule logic works as expected.
 
-# Bonus Features:
+## Bonus Features:
 
-2.1 Error Handling
-Handle invalid rule strings or incorrect data formats.
+** Error Handling: ** Handle invalid rule strings or incorrect data formats.
+** Attribute Validation: ** Ensure attributes are part of a pre-defined catalog.
+** Rule Modification: ** Allow existing rules to be modified using additional functions.
+** User-defined Functions: ** Optionally extend the system to support custom functions in the rule language.
 
-2.2 Attribute Validation
-Ensure attributes are part of a pre-defined catalog.
-
-2.3 Rule Modification
-Allow existing rules to be modified using additional functions.
-
-2.4 User-defined Functions
-Optionally extend the system to support custom functions in the rule language.
-
-# Project Structure:
-
-Backend (Node.js)
-
+## Project Structure:
+** Backend (Node.js): **
 Folder: rule-engine
 
-Key Files:
+**Key Files:**
 
 1. src/: Contains controllers, models, and utility functions.
 2. index.js: Main entry point for the backend.
