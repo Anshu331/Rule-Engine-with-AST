@@ -56,22 +56,22 @@ Description: Evaluates a rule against the provided attributes.
 
 ## Test Cases:
 
-- ** Creating Rules:** Convert rules to AST using create_rule and verify their correctness.
+- **Creating Rules:** Convert rules to AST using create_rule and verify their correctness.
 
-- ** Combining Rules:** Combine multiple rules and check the combined AST for correctness.
+- **Combining Rules:** Combine multiple rules and check the combined AST for correctness.
 
-- ** Evaluating Rules:** Provide sample JSON data and test the evaluate_rule function to ensure the rule logic works as expected.
+- **Evaluating Rules:** Provide sample JSON data and test the evaluate_rule function to ensure the rule logic works as expected.
 
 ## Bonus Features:
 
-- ** Error Handling: ** Handle invalid rule strings or incorrect data formats.
-- ** Attribute Validation: ** Ensure attributes are part of a pre-defined catalog.
-- ** Rule Modification: ** Allow existing rules to be modified using additional functions.
-- ** User-defined Functions: ** Optionally extend the system to support custom functions in the rule language.
+- **Error Handling:** Handle invalid rule strings or incorrect data formats.
+- **Attribute Validation:** Ensure attributes are part of a pre-defined catalog.
+- **Rule Modification:** Allow existing rules to be modified using additional functions.
+- **User-defined Functions:** Optionally extend the system to support custom functions in the rule language.
 
 ## Project Structure:
-- ** Backend (Node.js): **
-Folder: rule-engine
+- **Backend (Node.js):** Folder(rule-engine)
+
 
 - **Key Files:**
 
@@ -80,11 +80,11 @@ Folder: rule-engine
 3. .env: Environment variables for the backend.
 4. package.json: Dependencies and scripts.
    
-Frontend (React, Vite, Tailwind CSS)
+- **Frontend (React, Vite, Tailwind CSS)**
 
-Folder: rule-engine-frontend
+- **Folder: rule-engine Frontend**
 
-Key Files:
+-**Key Files:**
 
 1. src/: React components and logic.
 2. tailwind.config.js: Tailwind CSS configuration.
