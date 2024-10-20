@@ -26,18 +26,19 @@ A rule is saved in both string format and as an AST.
 
 ## Sample Data:
 
-{
+ ```{
   "_id": { "$oid": "6711e33897e50c81ddb6ea6d" },
   "ruleString": "(age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing') AND (salary > 50000 OR experience > 5)",
   "ast": { /* Abstract Syntax Tree structure */ }
 }
-
+  ```
 Sample Rules:
+ ```
 
 - **Rule 1:** ((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)
 
 - **Rule 2:** ((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)
-
+ ```
 ## API Design: 
 
 1. create_rule(rule_string)
@@ -55,27 +56,24 @@ Description: Evaluates a rule against the provided attributes.
 
 ## Test Cases:
 
-** Creating Rules **
-Convert rules to AST using create_rule and verify their correctness.
+- ** Creating Rules:** Convert rules to AST using create_rule and verify their correctness.
 
-** Combining Rules **
-Combine multiple rules and check the combined AST for correctness.
+- ** Combining Rules:** Combine multiple rules and check the combined AST for correctness.
 
-** Evaluating Rules **
-Provide sample JSON data and test the evaluate_rule function to ensure the rule logic works as expected.
+- ** Evaluating Rules:** Provide sample JSON data and test the evaluate_rule function to ensure the rule logic works as expected.
 
 ## Bonus Features:
 
-** Error Handling: ** Handle invalid rule strings or incorrect data formats.
-** Attribute Validation: ** Ensure attributes are part of a pre-defined catalog.
-** Rule Modification: ** Allow existing rules to be modified using additional functions.
-** User-defined Functions: ** Optionally extend the system to support custom functions in the rule language.
+- ** Error Handling: ** Handle invalid rule strings or incorrect data formats.
+- ** Attribute Validation: ** Ensure attributes are part of a pre-defined catalog.
+- ** Rule Modification: ** Allow existing rules to be modified using additional functions.
+- ** User-defined Functions: ** Optionally extend the system to support custom functions in the rule language.
 
 ## Project Structure:
-** Backend (Node.js): **
+- ** Backend (Node.js): **
 Folder: rule-engine
 
-**Key Files:**
+- **Key Files:**
 
 1. src/: Contains controllers, models, and utility functions.
 2. index.js: Main entry point for the backend.
@@ -95,37 +93,42 @@ Key Files:
 
 # Installation and Setup:
 
-Backend
+## Backend
 
-1. Navigate to the rule-engine directory:
+1. **Navigate to the rule-engine directory:**
    
-    cd rule-engine
+    ```cd rule-engine```
 
-3. Install the dependencies:
+2. **Navigate to the rule-engine Backend directory:**
    
-    npm install
+    ```cd Backend```   
 
-4. Create a .env file and add necessary environment variables, including your database URL:
+3. **Install  Dependencies**
+
    
-    HORA_DATABASE=<your_database_url>
+    ```npm install```
 
-5. Start the backend server:
+4. **Create a .env file and add necessary environment variables, including your database URL:**
    
-    npm start
+    ```HORA_DATABASE=<your_database_url>```
 
-# Frontend:
-
-1. Navigate to the rule-engine-frontend directory:
+5. **Start the backend server:**
    
-    cd rule-engine-frontend
+    ```npm start```
 
-2. Install the dependencies:
-   
-    npm install
+## Frontend:
 
-3. Start the frontend development server:
+1. **Navigate to the rule-engine Backend directory:**
    
-    npm run dev
+    ```cd Fronted```
+
+2. **Install the dependencies:**
+   
+    ```npm install```
+
+3. **Start the frontend development server:**
+   
+    ```npm run dev```
 
 # Usage:
 
