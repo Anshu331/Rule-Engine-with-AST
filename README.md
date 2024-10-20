@@ -4,7 +4,7 @@ Rule Engine with AST
 
 This repository contains a 3-tier rule engine application that evaluates user eligibility based on attributes like age, department, income, spend, etc. The system uses an Abstract Syntax Tree (AST) to represent and manage conditional rules, allowing dynamic creation, combination, and modification of these rules.
 
-# Features:
+## Features:
 
 1. Create, combine, and modify rules using AST.
 2. Dynamic rule evaluation based on attributes.
